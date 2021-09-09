@@ -1,0 +1,10 @@
+[package]
+name = "dds2ktx"
+version = "0.1.0"
+edition = "2018"
+license = "MPL-2.0"
+
+[dependencies]
+bytemuck = "*"
+libktx-rs = { git = "https://github.com/UberLambda/libktx-rs" }
+structopt = "*"

@@ -1,0 +1,3 @@
+This tool converts DirectDraw Surface .dds files to Khronos TeXture .ktx files.
+
+Usage: dds2ktx -i InputTexture.dds -o OutputTexture.ktx
