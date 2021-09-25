@@ -8,3 +8,4 @@ license = "MPL-2.0"
 bytemuck = "*"
 libktx-rs = { git = "https://github.com/UberLambda/libktx-rs" }
 structopt = "*"
+scratch-dds = { git = "https://github.com/bazhenovc/scratch-dds" }

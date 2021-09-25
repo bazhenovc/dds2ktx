@@ -298,7 +298,7 @@ pub const VK_FORMAT_G16_B16R16_2PLANE_422_UNORM_KHR: u32 = VK_FORMAT_G16_B16R16_
 pub const VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM_KHR: u32 = VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM;
 
 pub fn dxgi_to_vk(dxgi_format: u32) -> u32 {
-    use crate::dds::dxgi_format::*;
+    use scratch_dds::dxgi_format::*;
 
     match dxgi_format {
         DXGI_FORMAT_UNKNOWN => panic!("Cannot translate FORMAT_UNKNOWN"),

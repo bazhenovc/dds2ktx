@@ -269,7 +269,7 @@ pub const GL_DEPTH32F_STENCIL8: u32 = 0x8CAD;
 pub const GL_DEPTH32F_STENCIL8_NV: u32 = 0x8DAC;
 
 pub fn dxgi_to_gl(dxgi_format: u32) -> u32 {
-    use crate::dds::dxgi_format::*;
+    use scratch_dds::dxgi_format::*;
 
     match dxgi_format {
         DXGI_FORMAT_UNKNOWN => panic!("Cannot translate FORMAT_UNKNOWN"),

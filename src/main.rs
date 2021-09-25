@@ -3,12 +3,7 @@
 // This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 // If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-#![allow(dead_code)]
-
-mod dds;
-
-mod scratch_image;
-use scratch_image::*;
+use scratch_dds::*;
 
 mod vk_format;
 use vk_format::*;
@@ -34,7 +29,7 @@ struct CommandLineOptions {
 fn main() {
     let command_line = CommandLineOptions::from_args();
 
-    let input_image = ScratchImage::from_file(&command_line.input_file);
+    let input_image = ScratchImage::from_file(&command_line.input_file).expect("Failed to load dds file");
 
     let common = CommonCreateInfo {
         create_storage: CreateStorage::AllocStorage,
